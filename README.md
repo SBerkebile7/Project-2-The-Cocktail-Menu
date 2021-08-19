@@ -1,4 +1,4 @@
-# Project-2-The-Cocktail-Menu
+# THE Cocktail Menu
 
 ## Description
 An application that generates drinks for 21+ users. Learn the basics of bartending by sifting through the mobile menu and interacting with the bartender blog. 
