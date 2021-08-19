@@ -13,8 +13,8 @@ An application that generates drinks for 21+ users. Learn the basics of bartendi
 
 ## Contributers
 
-Spencer Berkebile
-Nelson Carlos de Silva
-Ryan Jolley
-Devin Simpson
+Spencer Berkebile <br>
+Nelson Carlos de Silva <br>
+Ryan Jolley <br>
+Devin Simpson <br>
 
