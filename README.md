@@ -11,10 +11,12 @@ An application that generates drinks for 21+ users. Learn the basics of bartendi
 <img width="714" alt="Screen Shot 2021-08-19 at 10 34 57 AM" src="https://user-images.githubusercontent.com/83616082/130087840-34b57e12-d4c0-48c3-bbd2-a7caf577e8b6.png">
 <img width="708" alt="Screen Shot 2021-08-19 at 10 35 06 AM" src="https://user-images.githubusercontent.com/83616082/130087849-5d974564-3299-493d-bbba-11b08ae9cfc8.png">
 
-## Contributers
+## Contributors
 
-Spencer Berkebile <br>
-Nelson Carlos de Silva <br>
-Ryan Jolley <br>
-Devin Simpson <br>
+|    Name                |            Strengths                     |
+|------------------------|------------------------------------------|
+| Spencer Berkebile      | Leader, Back-End, JS, Node               |
+| Nelson Carlos de Silva | JS, Front-End                            |
+| Ryan Jolley            | Front-End/CSS, Web/3rd Party API's       |
+| Devin Simpson          | Front-End, JS, Algorithms and Logic      |
 
