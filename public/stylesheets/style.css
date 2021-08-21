@@ -17,3 +17,9 @@ footer {
 .cocktail-logo {
     width: 20%;
 }
+
+.col img {
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+}
