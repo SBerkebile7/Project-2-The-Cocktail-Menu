@@ -3,6 +3,9 @@
 ## Description
 An application that generates drinks for 21+ users. Learn the basics of bartending by sifting through the mobile menu and interacting with the bartender blog. 
 
+## Deployed website
+https://the-cocktail-menu.herokuapp.com/
+
 ## Models 
 <img width="701" alt="Screen Shot 2021-08-19 at 10 10 00 AM" src="https://user-images.githubusercontent.com/83616082/130087790-6e244575-8fbc-4dba-971b-c7c6ea91de09.png">
 <img width="718" alt="Screen Shot 2021-08-19 at 10 34 29 AM" src="https://user-images.githubusercontent.com/83616082/130087813-572dd41d-4c97-4a20-b385-c2ea30dd3673.png">
