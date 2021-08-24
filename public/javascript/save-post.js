@@ -4,7 +4,7 @@ async function saveFormHandler(event) {
     const id = window.location.toString().split('/')[
         window.location.toString().split('/').length - 1
     ];
-    const response = await fetch(`/api/posts/${id}`, {
+    const response = await fetch(`/api/saved-posts/${id}`, {
         method: 'PUT',
         body: JSON.stringify({
             post_id: id
@@ -21,4 +21,4 @@ async function saveFormHandler(event) {
     }
 }
 
-document.querySelector('.save-post-btn').addEventListener('click', saveFormHandler);
+document.querySelector('.save-post').addEventListener('click', saveFormHandler);

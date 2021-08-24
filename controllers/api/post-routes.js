@@ -41,14 +41,6 @@ router.get('/:id', (req, res) => {
         ],
         include: [
             {
-                model: Comment,
-                attributes: ['id', 'comment_text', 'post_id', 'user_id', 'created_at'],
-                include: {
-                    model: User,
-                    attributes: ['username']
-                }
-            },
-            {
                 model: User,
                 attributes: ['username']
             }
@@ -61,6 +53,15 @@ router.get('/:id', (req, res) => {
         }
         res.json(dbPostData);
     })
+    .catch(err => {
+        console.log(err);
+        res.status(500).json(err);
+    });
+});
+
+router.put('/saved', withAuth, (req, res) => {
+    Post.save({ ...req.body, user_id: req.session.user_id }, { Save, User })
+    .then(updatedSaveData => res.json(updatedSaveData))
     .catch(err => {
         console.log(err);
         res.status(500).json(err);

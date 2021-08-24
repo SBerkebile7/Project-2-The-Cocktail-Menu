@@ -1,8 +1,8 @@
 <h2>Your Saved Posts</h2>
-{{#if posts.length}}
+{{#if saved_posts.length}}
 <section>
     <ol>
-        {{#each posts as |post|}}
+        {{#each saved_posts as |post|}}
         <li>
             {{> post-info post}}
             <a href="/saved/{{post.id}}" class="edit-link">View post</a>

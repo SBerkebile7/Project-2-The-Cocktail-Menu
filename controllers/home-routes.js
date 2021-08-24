@@ -91,7 +91,7 @@ router.get('/signup', (req, res) => {
     res.render('signup');
 });
 
-// allows users to login
+// allows users to see saved posts
 router.get('/saved', (req, res) => {
     if (req.session.loggedIn) {
         res.redirect('/');
