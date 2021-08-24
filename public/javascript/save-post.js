@@ -4,21 +4,19 @@ async function saveFormHandler(event) {
     const id = window.location.toString().split('/')[
         window.location.toString().split('/').length - 1
     ];
-    const response = await fetch(`/api/saved-posts/${id}`, {
+    const response = await fetch(`/api/posts/saved`, {
         method: 'PUT',
         body: JSON.stringify({
             post_id: id
         }),
-        headers: {
-            'Content-Type': 'application/json'
-        }
+        headers: { 'Content-Type': 'application/json' }
     });
 
     if (response.ok) {
-        document.location.replace('/saved/');
+        document.location.replace('/saved');
     } else {
         alert(response.statusText);
     }
 }
 
-document.querySelector('.save-post').addEventListener('click', saveFormHandler);
+document.querySelector('.save-post-btn').addEventListener('click', saveFormHandler);
