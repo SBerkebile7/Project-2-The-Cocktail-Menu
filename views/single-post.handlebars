@@ -1,0 +1,13 @@
+{{> post-info post}}
+
+{{#if loggedIn}}
+<form class="save-post">
+    <div>
+        <button type="submit">save post</button>
+    </div>
+</form>
+{{/if}}
+
+{{#if loggedIn}}
+<script src="/javascript/save-post.js"></script>
+{{/if}}
