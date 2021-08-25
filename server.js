@@ -2,6 +2,8 @@ const path = require('path');
 const express = require('express');
 const session = require('express-session');
 const exphbs = require('express-handlebars');
+// added bootstrap
+const bootstrap = require('bootstrap');
 
 const app = express();
 const PORT = process.env.PORT || 3001;

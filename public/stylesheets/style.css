@@ -1,5 +1,37 @@
-
+.hero {
+    background-color: #292b2c;
+}
 
 footer {
     background-color: #FF5E00;
 }
+
+.logo {
+    color: white;
+}
+
+.col {
+    color: white;
+}
+
+.cocktail-logo {
+    width: 20%;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 3px;
+  }
+
+.col {
+    flex: 33%;
+    max-width: 33%;
+    padding: 0 3px;
+  }
+  
+  .col img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+  }
