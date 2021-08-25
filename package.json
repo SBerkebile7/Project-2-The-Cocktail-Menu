@@ -1,5 +1,5 @@
 {
-  "name": "project-2-the-cocktail-menu",
+  "name": "Project-2-The-Cocktail-Menu",
   "version": "1.0.0",
   "description": "## Description An application that generates drinks for 21+ users. Learn the basics of bartending by sifting through the mobile menu and interacting with the bartender blog.",
   "main": "server.js",
@@ -12,13 +12,21 @@
     "type": "git",
     "url": "git+https://github.com/SBerkebile7/Project-2-The-Cocktail-Menu.git"
   },
+  "keywords": [],
   "author": "",
   "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "connect-session-sequelize": "^7.1.1",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.3.3",
+    "express-session": "^1.17.2",
+    "mysql2": "^2.3.0",
+    "sequelize": "^6.6.5"
+  },
   "bugs": {
     "url": "https://github.com/SBerkebile7/Project-2-The-Cocktail-Menu/issues"
   },
-  "homepage": "https://github.com/SBerkebile7/Project-2-The-Cocktail-Menu#readme",
-  "dependencies": {
-    "bootstrap": "^5.1.0"
-  }
+  "homepage": "https://github.com/SBerkebile7/Project-2-The-Cocktail-Menu#readme"
 }
