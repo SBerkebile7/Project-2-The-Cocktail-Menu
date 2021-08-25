@@ -94,11 +94,25 @@ router.get('/signup', (req, res) => {
 // allows users to see saved posts
 router.get('/saved', (req, res) => {
     if (req.session.loggedIn) {
-        res.redirect('/');
+        res.render('saved', {
+            loggedIn: req.session.loggedIn
+        });
         return;
     }
 
-    res.render('saved');
+    res.redirect('/');
+});
+
+// allows users to see our Contact Us page
+router.get('/contact', (req, res) => {
+    if (req.session.loggedIn) {
+        res.render('contact', {
+            loggedIn: req.session.loggedIn
+        });
+        return;
+    }
+    
+    res.render('contact');
 });
 
 module.exports = router;

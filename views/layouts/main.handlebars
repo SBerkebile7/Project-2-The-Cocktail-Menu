@@ -6,8 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>THE Cocktail Menu</title>
     <link rel="stylesheet" href="/stylesheets/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous" />
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
 </head>
 
 <body>
@@ -16,13 +15,15 @@
             <h1>
                 <a href="/"><button class="btn-no-style">THE Cocktail Menu</button></a>
             </h1>
-            <nav>
+            <nav >
                 {{#if loggedIn}}
                 <a href="/"><button class="btn-no-style">homepage</button></a>
                 <a href="/saved"><button class="btn-no-style">saved posts</button></a>
+                <a href="/contact"><button class="btn-no-style">contact us</button></a>
                 <button id="logout" class="btn-no-style">logout</button>
                 {{else}}
                 <a href="/"><button class="btn-no-style">homepage</button></a>
+                <a href="/contact"><button class="btn-no-style">contact us</button></a>
                 <a href="/login"><button class="btn-no-style">login</button></a>
                 {{/if}}
             </nav>
@@ -37,9 +38,11 @@
         <div class="text-centered">  
             <a href="/"><button class="btn-no-style">homepage</button></a>
             <a href="/saved"><button class="btn-no-style">saved posts</button></a>
+            <a href="/contact"><button class="btn-no-style">contact us</button></a>
             <button id="logout" class="btn-no-style">logout</button>
             {{else}}
             <a href="/"><button class="btn-no-style">homepage</button></a>
+            <a href="/contact"><button class="btn-no-style">contact us</button></a>
             <a href="/login"><button class="btn-no-style">login</button></a>
         </div>
         {{/if}} 
