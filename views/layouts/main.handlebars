@@ -16,13 +16,16 @@
             <h1>
                 <a href="/"><button class="btn-no-style">THE Cocktail Menu</button></a>
             </h1>
-            <nav>
+            <nav >
                 {{#if loggedIn}}
                 <a href="/"><button class="btn-no-style">homepage</button></a>
                 <a href="/saved"><button class="btn-no-style">saved posts</button></a>
+                <a href="/contact"><button class="btn-no-style">contact us</button></a>
                 <button id="logout" class="btn-no-style">logout</button>
                 {{else}}
                 <a href="/"><button class="btn-no-style">homepage</button></a>
+                <a href="/saved"><button class="btn-no-style">saved posts</button></a>
+                <a href="/contact"><button class="btn-no-style">contact us</button></a>
                 <a href="/login"><button class="btn-no-style">login</button></a>
                 {{/if}}
             </nav>
@@ -37,9 +40,12 @@
         <div class="text-centered">  
             <a href="/"><button class="btn-no-style">homepage</button></a>
             <a href="/saved"><button class="btn-no-style">saved posts</button></a>
+            <a href="/contact"><button class="btn-no-style">contact us</button></a>
             <button id="logout" class="btn-no-style">logout</button>
             {{else}}
             <a href="/"><button class="btn-no-style">homepage</button></a>
+            <a href="/saved"><button class="btn-no-style">saved posts</button></a>
+            <a href="/contact"><button class="btn-no-style">contact us</button></a>
             <a href="/login"><button class="btn-no-style">login</button></a>
         </div>
         {{/if}} 
