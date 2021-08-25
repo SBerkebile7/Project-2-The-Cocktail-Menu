@@ -1,17 +1,17 @@
-<h2>Your Saved Posts</h2>
-{{#if saved_posts.length}}
 <section>
-    <ol>
-        {{#each saved_posts as |post|}}
-        <li>
-            {{> post-info post}}
-            <a href="/saved/{{post.id}}" class="edit-link">View post</a>
-        </li>
-        {{/each}}
-    </ol>
-    {{else}}
-    <h5>You do not have any saved posts, save one now!</h5>
+    <h2>Your Saved Posts</h2>
+    {{#if saved_posts.length}}
+    <section>
+        <ol>
+            {{#each saved_posts as |post|}}
+            <li>
+                {{> post-info post}}
+                <a href="/saved/{{post.id}}" class="edit-link">View post</a>
+            </li>
+            {{/each}}
+        </ol>
+        {{else}}
+        <h5>You do not have any saved posts, save one now!</h5>
+    </section>
+    {{/if}}
 </section>
-{{/if}}
-
-<script src="./javascript/saved-post.js"></script>
