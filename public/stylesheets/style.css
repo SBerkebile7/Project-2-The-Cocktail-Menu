@@ -1,4 +1,4 @@
-.hero {
+body {
     background-color: #292b2c;
 }
 
@@ -16,6 +16,14 @@ footer {
 
 .cocktail-logo {
     width: 20%;
+}
+
+.title-logo {
+    color: #21F5FF;
+}
+
+.post-list {
+    color: #292b2c;
 }
 
 .row {
