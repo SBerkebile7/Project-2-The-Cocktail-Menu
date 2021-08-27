@@ -23,7 +23,109 @@ body {
 }
 
 /*------------------------HERO SECTION-------------------*/
+.login-form-wrapper {
+    width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: var(--third);
+}
 
+.login-head {
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+}
+
+.login-form {
+    width: 100%;
+}
+
+.div-login {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.login-input {
+    background-color: var(--third);
+    border-color: white;
+    border-radius: 2px;
+    border-width: 3px;
+    margin: 0 10px 10px 10px;
+}
+
+.login-input::placeholder {
+    color: white;
+}
+
+.login-button {
+    font-size: 20px;
+    width: 40%;
+    font-weight: bold;
+    margin: 10px;
+    border-radius: 25px;
+}
+
+.create {
+    color: var(--first);
+    margin-left: 15px;
+    margin-bottom: 15px;
+    padding: 0;
+    border-radius: 0;
+    border-bottom: 1px solid var(--first);
+}
+
+.create:hover {
+    color: white;
+    border-bottom: 2px solid white;
+}
+
+.signup-form-wrapper {
+    width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: var(--third);
+}
+
+.signup-head {
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+}
+
+.signup-form {
+    width: 100%;
+}
+
+.div-signup {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.signup-input {
+    background-color: var(--third);
+    border-color: white;
+    border-radius: 2px;
+    border-width: 3px;
+    margin: 0 10px 10px 10px;
+}
+
+.signup-input::placeholder {
+    color: white;
+}
+
+.signup-button {
+    font-size: 20px;
+    width: 40%;
+    font-weight: bold;
+    margin: 10px 10px 20px 10px;
+    border-radius: 25px;
+}
 
 /*------------------------PHOTO GRID / MAIN SECTION-------------------*/
 
