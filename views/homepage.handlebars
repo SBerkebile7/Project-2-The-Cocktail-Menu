@@ -1,3 +1,17 @@
+<form class="post-search">
+    <div>
+        <label for="search-area">Choose a liquor to search for here:</label>
+        <select id="search-area" name="search-area">
+            <option value="gin">Gin</option>
+            <option value="rum">Rum</option>
+            <option value="tequila">Tequila</option>
+            <option value="vodka">Vodka</option>
+            <option value="whiskey">Whiskey</option>
+        </select>
+    </div>
+    <button type="submit" class="button">Search</button>
+</form>
+
 <ol class="post-list">
     {{#each posts as |post|}}
     <li>
