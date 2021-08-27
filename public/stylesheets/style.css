@@ -12,13 +12,14 @@
 body {
     background-size: cover;
     background-position: center;
-    background-color: #292b2c;
+    background-color:var(--third);
 }
 
 /*------------------------HEADER AND NAV------------------------*/
 .title-logo {
     color: var(--first);
     font-size: 50px;
+    background-color: var(--third);
 }
 
 /*------------------------HERO SECTION-------------------*/
@@ -50,7 +51,7 @@ footer {
 
 
 .post-list {
-    color: #292b2c;
+    color: var(--first);
 }
 
 .row {
