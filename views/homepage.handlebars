@@ -1,14 +1,20 @@
 <div class="container">
+
+    <div id="parent">
+        <div id="narrow">
+            <figure class="hero">
+                <img src="big-logo-removebg-preview.png" alt="logo">
+            </figure>
+        </div>
+        <div id="wide">
+            <ul class="post-list">
+                {{#each posts as |post|}}
+                <li>
+                    {{> post-info post }}
+                </li>
+                {{/each}}
+            </ul>
+        </div>
+
+    </div>
 </div>
-
-    <figure class="image-is-128x128">
-        <img src="big-logo.png" alt="logo">
-    </figure>
-
-<ol class="tile post-list"> 
-    {{#each posts as |post|}}
-    <li>
-        {{> post-info post }}
-    </li>
-    {{/each}}
-</ol>

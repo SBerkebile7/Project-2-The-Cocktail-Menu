@@ -24,12 +24,26 @@ body {
 
 /*------------------------HERO SECTION-------------------*/
 
-
+.hero img {
+    width: 50%;
+}
 /*------------------------PHOTO GRID / MAIN SECTION-------------------*/
 
 
-
-
+#parent {
+    display: flex;
+  }
+  #narrow {
+    width: 200px;
+    background: lightblue;
+    /* Just so it's visible */
+  }
+  #wide {
+    flex: 1;
+    /* Grow to rest of container */
+    background: lightgreen;
+    /* Just so it's visible */
+  }
 /*------------------------FOOTER------------------------*/
 
 footer {
