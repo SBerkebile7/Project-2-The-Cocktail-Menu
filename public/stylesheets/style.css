@@ -1,0 +1,73 @@
+:root {
+    --first: #21F5FF;
+    --second: #FF5E00;
+    --third:#292b2c;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-size: cover;
+    background-position: center;
+    background-color:var(--third);
+}
+
+/*------------------------HEADER AND NAV------------------------*/
+.title-logo {
+    color: var(--first);
+    font-size: 50px;
+    background-color: var(--third);
+}
+
+/*------------------------HERO SECTION-------------------*/
+
+
+/*------------------------PHOTO GRID / MAIN SECTION-------------------*/
+
+
+
+
+/*------------------------FOOTER------------------------*/
+
+footer {
+    background-color: #FF5E00;
+}
+
+.logo {
+    color: white;
+}
+
+.col {
+    color: white;
+}
+
+.cocktail-logo {
+    width: 20%;
+}
+
+
+
+.post-list {
+    color: var(--first);
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 3px;
+  }
+
+.col {
+    flex: 33%;
+    max-width: 33%;
+    padding: 0 3px;
+  }
+  
+  .col img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+  }
