@@ -1,6 +1,35 @@
+:root {
+    --first: #21F5FF;
+    --second: #FF5E00;
+    --third:#292b2c;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
 body {
+    background-size: cover;
+    background-position: center;
     background-color: #292b2c;
 }
+
+/*------------------------HEADER AND NAV------------------------*/
+.title-logo {
+    color: var(--first);
+    font-size: 50px;
+}
+
+/*------------------------HERO SECTION-------------------*/
+
+
+/*------------------------PHOTO GRID / MAIN SECTION-------------------*/
+
+
+
+
+/*------------------------FOOTER------------------------*/
 
 footer {
     background-color: #FF5E00;
@@ -18,11 +47,7 @@ footer {
     width: 20%;
 }
 
-.title-logo {
-    color: #21F5FF;
-    font-family: 'Roboto Sans';
-    font-size: 50px;
-}
+
 
 .post-list {
     color: #292b2c;
