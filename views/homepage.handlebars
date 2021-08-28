@@ -1,65 +1,63 @@
-    <div id="parent">
-        <div id="narrow">
-            <figure class="hero">
-                <img src="big-logo-removebg-preview.png" alt="logo">
-            </figure>
-        </div>
-        <div id="wide">
+<div id="parent">
+    <div id="narrow">
 
-            <div id="in-wide">
-                <div>
-
-            <div class="container row recipe-container" id="row">
-                <div class="card col s12 m6 13 container box">
-                    <div class="card-image" id="card-1">
-                        <img class="post-1" src="margarita.jpg">
-                    </div>
-                    </div>
-                    
-
-
-                     <div class="card col s12 m6 13 container box">
-                    <div class="card-image" id="card-2">
-                        <img class="post-2" src="manhattan.jpg">
-                    </div>
-                    </div>
-
-                     <div class="card col s12 m6 13 container box">
-                    <div class="card-image" id="card-3">
-                        <img class="post-3" src="champagne-cocktail.jpg">
-     </div>
-                </div>
-                </div>
-                       <div class="container row recipe-container" id="row">
-                <div class="card col s12 m6 13 container box">
-                    <div class="card-image" id="card-1">
-                        <img class="post-4" src="whiskey-sour.jpg">
-                    </div>
-                    </div>
-
-
-                   <div class="card col s12 m6 13 container box">
-                    <div class="card-image" id="card-3">
-                        <img class="post-5" src="bloody-mary.jpg">
-                    </div>
-                </div>
-
-                   <div class="card col s12 m6 13 container box">
-                    <div class="card-image" id="card-3">
-                        <img class="post-6" src="pina colada.jpg">
-                    </div>
-                </div>
-          
-
-
-
-            <ul class="post-list">
-                {{#each posts as |post|}}
-                <li>
-                    {{> post-info post }}
-                </li>
-                {{/each}}
-            </ul>
-        </div>
-
+        <img src="cropped_logo-removebg-preview.png" id="logo">
     </div>
+    <div id="wide">
+
+        <div id="in-wide">
+            <div>
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm">
+                            <div class="card">
+                                <div class="container">
+                                    <img src="champagne-cocktail.jpg" style="width:100%;">
+                                    <div class="centered">OLD FASHIONED</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm">
+                            <div class="card">
+                                <img src="manhattan.jpg">
+                            </div>
+                        </div>
+                        <div class="col-sm">
+                            <div class="card">
+                                <img src="whiskey-sour.jpg">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm">
+                            <div class="card">
+                                <img src="margarita.jpg">
+                            </div>
+                        </div>
+                        <div class="col-sm">
+                            <div class="card">
+                                <img src="bloody-mary.jpg">
+                            </div>
+                        </div>
+                        <div class="col-sm">
+                            <div class="card">
+                                <img src="pina colada.jpg">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <ul class="post-list">
+                    {{#each posts as |post|}}
+                    <li>
+                        {{> post-info post }}
+                    </li>
+                    {{/each}}
+                </ul>
+            </div>
+
+        </div>

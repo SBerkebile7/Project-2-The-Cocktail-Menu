@@ -25,7 +25,11 @@ body {
 /*------------------------HERO SECTION-------------------*/
 .hero img {
     width: 100%;
-    margin-top: 50px;
+    margin-top: 60px;
+}
+
+#logo {
+  margin-top: 50px;
 }
 
 .login-form-wrapper {
@@ -133,19 +137,27 @@ body {
 }
 
 /*------------------------PHOTO GRID / MAIN SECTION-------------------*/
-#row {
-    padding-left: 50px;
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    opacity: .1;
 }
 
-.card-image img {
-    height: 200px;
+
+
+.card img {
+    height: 100px;
     width: auto;
 }
 
-.card-image {
-    height: 215px;
-    width: auto;
+.card {
     background-color: var(--third);
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 #parent {
