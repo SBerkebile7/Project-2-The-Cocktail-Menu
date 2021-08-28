@@ -1,25 +1,74 @@
-<form class="post-search">
-    <div>
-        <label for="search-area">Choose a liquor to search for here:</label>
-        <select id="search-area" name="search-area">
-            <option value="gin">Gin</option>
-            <option value="rum">Rum</option>
-            <option value="tequila">Tequila</option>
-            <option value="vodka">Vodka</option>
-            <option value="whiskey">Whiskey</option>
-        </select>
+<div class="container">
+
+    <div id="parent">
+        <div id="narrow">
+            <figure class="hero">
+                <img src="big-logo-removebg-preview.png" alt="logo">
+            </figure>
+        </div>
+        <div id="wide">
+
+            <div class="container row recipe-container">
+                <div class="card col s12 m6 13 container box">
+                    <div class="card-image waves-effect waves-block waves-light" id="card-1">
+                        <img class="post-1" src="margarita.jpg">
+                    </div>
+                    </div>
+
+
+                     <div class="card col s12 m6 13 container box">
+                    <div class="card-image waves-effect waves-block waves-light" id="card-2">
+                        <img class="post-2" src="manhattan.jpg">
+                    </div>
+                    </div>
+
+                     <div class="card col s12 m6 13 container box">
+                    <div class="card-image waves-effect waves-block waves-light" id="card-3">
+                        <img class="post-3" src="champagne-cocktail.jpg">
+                    </div>
+                </div>
+                       <div class="container row recipe-container">
+                <div class="card col s12 m6 13 container box">
+                    <div class="card-image waves-effect waves-block waves-light" id="card-1">
+                        <img class="post-4" src="margarita.jpg">
+                    </div>
+                    </div>
+
+
+                   <div class="card col s12 m6 13 container box">
+                    <div class="card-image waves-effect waves-block waves-light" id="card-3">
+                        <img class="post-5" src="bloody-mary.jpg">
+                    </div>
+                </div>
+
+                     <div class="card col s12 m6 13 container box">
+                    <div class="card-image waves-effect waves-block waves-light" id="card-3">
+                        <img class="post-6" src="champagne-cocktail.jpg">
+                    </div>
+                </div>
+
+                <form class="post-search">
+                    <div>
+                        <label for="search-area">Choose a liquor to search for here:</label>
+                        <select id="search-area" name="search-area">
+                            <option value="gin">Gin</option>
+                            <option value="rum">Rum</option>
+                            <option value="tequila">Tequila</option>
+                            <option value="vodka">Vodka</option>
+                            <option value="whiskey">Whiskey</option>
+                        </select>
+                    </div>
+                    <a href="/search"><button type="submit" class="button">Search</button></a>
+                </form>
+
+            <ul class="post-list">
+                {{#each posts as |post|}}
+                <li>
+                    {{> post-info post }}
+                </li>
+                {{/each}}
+            </ul>
+        </div>
+
     </div>
-    <a href="/search"><button type="submit" class="button">Search</button></a>
-</form>
-
-{{!-- <ol class="post-list">
-    {{#each posts as |post|}}
-    <li>
-        {{> post-info post }}
-    </li>
-    {{/each}}
-</ol> --}}
-
-<section id="drink-section"></section>
-
-<script src="/javascript/search.js"></script>
+</div>
