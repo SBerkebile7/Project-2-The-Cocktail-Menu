@@ -1,22 +1,25 @@
-<section class="login-form-wrapper">
-    <section class="login-head">
-        <div>
-            <h1>login</h1>
-        </div>
+<section class="hero">
+    <img src="hero.jpg">
+    <section class="login-form-wrapper">
+        <section class="login-head">
+            <div>
+                <h1>login</h1>
+            </div>
+        </section>
+        <form class="login-form">
+            <div class="div-login">
+                <input type="text" id="username-login" class="form-control login-input" placeholder="USERNAME"/>
+            </div>
+            <div class="div-login">
+                <input type="password" id="password-login" class="form-control login-input" placeholder="PASSWORD"/>
+            </div>
+            <div class="div-login">
+                <button type="submit" class="btn btn-light shadow-none login-button">log in</button>
+            </div>
+            <div>
+                <a href="/signup"><button type="button" class="btn shadow-none create">Create an account</button></a>
+            </div>
+        </form>
     </section>
-    <form class="login-form">
-        <div class="div-login">
-            <input type="text" id="username-login" class="form-control login-input" placeholder="USERNAME"/>
-        </div>
-        <div class="div-login">
-            <input type="password" id="password-login" class="form-control login-input" placeholder="PASSWORD"/>
-        </div>
-        <div class="div-login">
-            <button type="submit" class="btn btn-light login-button">log in</button>
-        </div>
-        <div>
-            <a href="/signup"><button type="button" class="btn shadow-none create">Create an account</button></a>
-        </div>
-    </form>
 </section>
 <script src="/javascript/login.js"></script>
