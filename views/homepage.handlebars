@@ -1,5 +1,3 @@
-<div class="container">
-
     <div id="parent">
         <div id="narrow">
             <figure class="hero">
@@ -8,44 +6,50 @@
         </div>
         <div id="wide">
 
-            <div class="container row recipe-container">
+            <div id="in-wide">
+                <div>
+
+            <div class="container row recipe-container" id="row">
                 <div class="card col s12 m6 13 container box">
-                    <div class="card-image waves-effect waves-block waves-light" id="card-1">
+                    <div class="card-image" id="card-1">
                         <img class="post-1" src="margarita.jpg">
                     </div>
                     </div>
+                    
 
 
                      <div class="card col s12 m6 13 container box">
-                    <div class="card-image waves-effect waves-block waves-light" id="card-2">
+                    <div class="card-image" id="card-2">
                         <img class="post-2" src="manhattan.jpg">
                     </div>
                     </div>
 
                      <div class="card col s12 m6 13 container box">
-                    <div class="card-image waves-effect waves-block waves-light" id="card-3">
+                    <div class="card-image" id="card-3">
                         <img class="post-3" src="champagne-cocktail.jpg">
-                    </div>
+     </div>
                 </div>
-                       <div class="container row recipe-container">
+                </div>
+                       <div class="container row recipe-container" id="row">
                 <div class="card col s12 m6 13 container box">
-                    <div class="card-image waves-effect waves-block waves-light" id="card-1">
-                        <img class="post-4" src="margarita.jpg">
+                    <div class="card-image" id="card-1">
+                        <img class="post-4" src="whiskey-sour.jpg">
                     </div>
                     </div>
 
 
                    <div class="card col s12 m6 13 container box">
-                    <div class="card-image waves-effect waves-block waves-light" id="card-3">
+                    <div class="card-image" id="card-3">
                         <img class="post-5" src="bloody-mary.jpg">
                     </div>
                 </div>
 
-                     <div class="card col s12 m6 13 container box">
-                    <div class="card-image waves-effect waves-block waves-light" id="card-3">
-                        <img class="post-6" src="champagne-cocktail.jpg">
+                   <div class="card col s12 m6 13 container box">
+                    <div class="card-image" id="card-3">
+                        <img class="post-6" src="pina colada.jpg">
                     </div>
                 </div>
+
 
                 <form class="post-search">
                     <div>
@@ -63,6 +67,7 @@
 
                 <section id="drink-section"></section>
 
+
             <ul class="post-list">
                 {{#each posts as |post|}}
                 <li>
@@ -73,7 +78,9 @@
         </div>
 
     </div>
+
 </div>
 
 
 <script src="/javascript/search.js"></script>
+
