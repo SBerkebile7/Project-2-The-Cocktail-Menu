@@ -5,114 +5,27 @@ async function searchFormHandler(event) {
     $("#drink-section").empty();
 
     const search = document.querySelector('#search-area').value;
-    
-    if(search == 'gin') {
-        console.log("You chose: " + search);
-        fetch('https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=Gin')
-        .then(
-            function(response) {
-                if (response.status !== 200) {
-                    console.log('Looks like there was a problem. Status Code: ' +
-                    response.status);
-                    return;
-                }
 
-                // Examine the text in the response
-                response.json().then(function(data) {
-                    console.log(data);
-                    displayCocktail(data);
-                });
+    console.log("You chose: " + search);
+    fetch(`https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=${search}`)
+    .then(
+        function(response) {
+            if (response.status !== 200) {
+                console.log('Looks like there was a problem. Status Code: ' +
+                response.status);
+                return;
             }
-        )
-        .catch(function(err) {
-            console.log('Fetch Error :-S', err);
-        });
-    } 
-    else if (search == "rum") {
-        console.log("You chose: " + search);
-        fetch('https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=Rum')
-        .then(
-            function(response) {
-                if (response.status !== 200) {
-                    console.log('Looks like there was a problem. Status Code: ' +
-                    response.status);
-                    return;
-                }
 
-                // Examine the text in the response
-                response.json().then(function(data) {
-                    console.log(data);
-                    displayCocktail(data);
-                });
-            }
-        )
-        .catch(function(err) {
-            console.log('Fetch Error :-S', err);
-        });
-    } else if (search == "tequila") {
-        console.log("You chose: " + search);
-        fetch('https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=Tequila')
-        .then(
-            function(response) {
-                if (response.status !== 200) {
-                    console.log('Looks like there was a problem. Status Code: ' +
-                    response.status);
-                    return;
-                }
-
-                // Examine the text in the response
-                response.json().then(function(data) {
-                    console.log(data);
-                    displayCocktail(data);
-                });
-            }
-        )
-        .catch(function(err) {
-            console.log('Fetch Error :-S', err);
-        });
-    } else if (search == "whiskey") {
-        console.log("You chose: " + search);
-        fetch('https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=Whiskey')
-        .then(
-            function(response) {
-                if (response.status !== 200) {
-                    console.log('Looks like there was a problem. Status Code: ' +
-                    response.status);
-                    return;
-                }
-
-                // Examine the text in the response
-                response.json().then(function(data) {
-                    console.log(data);
-                    displayCocktail(data);
-                });
-            }
-        )
-        .catch(function(err) {
-            console.log('Fetch Error :-S', err);
-        });
-    } else if (search == "vodka") {
-        console.log("You chose: " + search);
-        fetch('https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=Vodka')
-        .then(
-            function(response) {
-                if (response.status !== 200) {
-                    console.log('Looks like there was a problem. Status Code: ' +
-                    response.status);
-                    return;
-                }
-
-                // Examine the text in the response
-                response.json().then(function(data) {
-                    console.log(data);
-                    displayCocktail(data);
-                });
-            }
-        )
-        .catch(function(err) {
-            console.log('Fetch Error :-S', err);
-        });
-    }
+            // Examine the text in the response
+            response.json().then(function(data) {
+                console.log(data);
+                displayCocktail(data);
+            });
+        }
+    )
+    .catch(function(err) {
+        console.log('Fetch Error :-S', err);
+    });
 }
 
 async function displayCocktail(cocktail) {
@@ -121,6 +34,9 @@ async function displayCocktail(cocktail) {
         let drinkSection = document.querySelector('#drink-section');
 
         let drinkName = document.createElement('h2');
+
+        // !!!follow this pattern to parse through different classes for the generated elements
+        // $(drinkName).addClass("title-logo");
 
         drinkName.innerHTML = cocktail.drinks[i].strDrink;
 
