@@ -42,7 +42,7 @@
                 <a href="/"><button class="button is-primary">homepage</button></a>
                 <a href="/saved"><button class="button is-dark">saved posts</button></a>
                 <a href="/contact"><button class="btn-no-style">contact us</button></a>
-                <button id="logout" class="btn-no-style">logout</button>
+                <button id="logout" class="button is-primary">logout</button>
                 {{else}}
                 <a href="/"><button class="button is-dark">homepage</button></a>
                 <a href="/contact"><button class="button is-dark">contact us</button></a>
@@ -103,24 +103,14 @@
         </main>
 
         <footer>
-            {{#if loggedIn}}
-            <div class="text-centered">
-                <a href="/"><button class="btn-no-style">homepage</button></a>
-                <a href="/saved"><button class="btn-no-style">saved posts</button></a>
-                <a href="/contact"><button class="btn-no-style">contact us</button></a>
-                <button id="logout" class="btn-no-style">logout</button>
-                {{else}}
-                <a href="/"><button class="btn-no-style">homepage</button></a>
-                <a href="/contact"><button class="btn-no-style">contact us</button></a>
-                <a href="/login"><button class="btn-no-style">login</button></a>
-            </div>
-            {{/if}}
+            
         </footer>
     </div>
 
     {{#if loggedIn}}
     <script src="/javascript/logout.js"></script>
     {{/if}}
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
     <!-- MDB -->
     <!-- MDB -->
@@ -132,7 +122,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
         integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
         crossorigin="anonymous"></script>
-    <script src="js.js"></script>
+    {{!-- <script src="js.js"></script> --}}
 </body>
 
 </html>

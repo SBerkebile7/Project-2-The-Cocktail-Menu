@@ -189,3 +189,9 @@ footer {
     vertical-align: middle;
     width: 100%;
   }
+
+
+#drink-section img{
+    width: 25%;
+    height: auto;
+}

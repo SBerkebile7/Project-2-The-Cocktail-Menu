@@ -1,7 +1,33 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
-class Post extends Model {}
+class Post extends Model {
+    static save(body, models) {
+        return models.Save.create({
+            user_id: body.user_id,
+            post_id: body.post_id
+        }).then(() => {
+            return Post.findOne({
+                where: {
+                    id: body.post_id
+                },
+                attributes: [
+                    'id',
+                    'title',
+                    'main_liquor',
+                    'post_content',
+                    'created_at',
+                ],
+                include: [
+                {
+                    model: models.User,
+                    attributes: ['username']
+                }
+                ]
+            });
+        });
+    }
+}
 
 Post.init(
     {
@@ -12,6 +38,10 @@ Post.init(
             autoIncrement: true
         },
         title: {
+            type: DataTypes.STRING,
+            allowNull: false
+        },
+        main_liquor: {
             type: DataTypes.STRING,
             allowNull: false
         },

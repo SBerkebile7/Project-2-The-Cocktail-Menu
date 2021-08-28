@@ -1,6 +1,6 @@
 const router = require('express').Router();
 const sequelize = require('../../config/connection');
-const { Post, User } = require('../../models');
+const { Post, User, Save } = require('../../models');
 const withAuth = require('../../utils/auth');
 
 // get all posts
@@ -10,6 +10,7 @@ router.get('/', (req, res) => {
         attributes: [
             'id',
             'title',
+            'main_liquor',
             'created_at',
             'post_content'
         ],
@@ -36,6 +37,7 @@ router.get('/:id', (req, res) => {
         attributes: [
             'id',
             'title',
+            'main_liquor',
             'created_at',
             'post_content'
         ],
@@ -59,7 +61,7 @@ router.get('/:id', (req, res) => {
     });
 });
 
-router.put('/saved', withAuth, (req, res) => {
+router.put('/save', withAuth, (req, res) => {
     Post.save({ ...req.body, user_id: req.session.user_id }, { Save, User })
     .then(updatedSaveData => res.json(updatedSaveData))
     .catch(err => {
@@ -67,5 +69,14 @@ router.put('/saved', withAuth, (req, res) => {
         res.status(500).json(err);
     });
 });
+
+// router.put('/saved/:id', withAuth, (req, res) => {
+//     Post.save({ ...req.body, user_id: req.session.user_id }, { Save, User })
+//     .then(updatedSaveData => res.json(updatedSaveData))
+//     .catch(err => {
+//         console.log(err);
+//         res.status(500).json(err);
+//     });
+// });
 
 module.exports = router;

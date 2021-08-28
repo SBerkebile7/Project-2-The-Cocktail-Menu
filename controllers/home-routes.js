@@ -1,6 +1,7 @@
 const router = require('express').Router();
 const sequelize = require('../config/connection');
 const { Post, User, Save } = require('../models');
+// const search = require('../public/javascript/search');
 
 // get all posts for homepage
 router.get('/', (req, res) => {
@@ -114,5 +115,37 @@ router.get('/contact', (req, res) => {
     
     res.render('contact');
 });
+
+router.get('/search', (req, res) => {
+    if (req.session.loggedIn) {
+        res.render('search', {
+            loggedIn: req.session.loggedIn
+        });
+        return;
+    }
+    
+    res.render('search');
+});
+
+// router.get('/search', search, (req, res) => {
+//     var searchResult = req.searchResult;
+
+//     if(req.session.loggedIn) {
+//         res.render('search', {
+//             results: searchResult.length,
+//             searchTerm: req/searchTerm,
+//             searchResult: searchResult,
+//             category: req.category,
+//         });
+//         return;
+//     }
+
+//     res.render('search', {
+//         results: searchResult.length,
+//         searchTerm: req/searchTerm,
+//         searchResult: searchResult,
+//         category: req.category,
+//     });
+// });
 
 module.exports = router;
