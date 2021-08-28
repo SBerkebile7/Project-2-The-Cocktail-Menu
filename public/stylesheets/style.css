@@ -143,8 +143,8 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    color: white;
-    opacity: .1;
+    color:var(--third);
+    
 }
 
 
@@ -152,10 +152,15 @@ body {
 .card img {
     height: 100px;
     width: auto;
+    opacity: .6;
 }
 
+/* .card img:hover {
+    opacity: .5;
+} */
+
 .card {
-    background-color: var(--third);
+    background-color: white;
     margin-top: 10px;
     margin-bottom: 10px;
 }
