@@ -71,8 +71,15 @@ body {
 }
 
 
+
 .login-input::placeholder {
     color: white;
+    margin-top: 10px;
+    background-color: var(--third);
+}
+
+#login {
+    float: right;
 }
 
 .login-button {
@@ -199,18 +206,18 @@ body {
 /*------------------------DRINK SEACRCH ------------------------*/
 
 .search-button {
-    font-size: 20px;
-    width: 40%;
+    font-size: 14px;
+    width: 18%;
     font-weight: bold;
     margin: 0px 10px 20px 10px;
     border-radius: 25px;
 
 }
 .search-button:hover {
-    font-size: 21px;
-    width: 40%;
+    font-size: 16px;
+    width: 18%;
     font-weight: bold;
-    margin: 0px 10px 20px 10px;
+    margin: 0px 10px 10px 10px;
     border-radius: 25px;
     background-color: var(--first);
 
@@ -233,8 +240,6 @@ footer {
 .cocktail-logo {
     width: 20%;
 }
-
-
 
 .post-list {
     color: var(--first);
