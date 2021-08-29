@@ -22,6 +22,17 @@ body {
     background-color: var(--third);
 }
 
+/* .logout {
+    float: right;
+    margin-top: 10px;
+    margin-right: 5px;
+
+}
+
+.logout:hover {
+    color: var(--first);
+} */
+
 /*------------------------HERO SECTION-------------------*/
 .hero img {
     width: 100%;
