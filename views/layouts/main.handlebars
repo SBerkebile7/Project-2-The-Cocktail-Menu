@@ -39,9 +39,9 @@
             </h1> --}}
             <nav>
                 {{#if loggedIn}}
-                <button id="logout" class="button is-dark is-small">LOG OUT</button>
+                <button id="logout" class="button is-dark">LOG OUT</button>
                 {{else}}
-                <a href="/login"><button class="button is-dark is-small">LOG IN</button></a>
+                <a href="/login"><button class="button is-dark">LOG IN</button></a>
                 {{/if}}
             </nav>
         </header>
@@ -123,7 +123,7 @@
         <footer>
 
             <h6>THE cocktail menu &copy 2021</h6>
-            {{#if loggedIn}}
+            {{!-- {{#if loggedIn}}
             <div class="text-centered">
                 <a href="/"><button class="btn-no-style">homepage</button></a>
                 <a href="/saved"><button class="btn-no-style">saved posts</button></a>
@@ -134,7 +134,7 @@
                 <a href="/contact"><button class="btn-no-style">contact us</button></a>
                 <a href="/login"><button class="btn-no-style">login</button></a>
             </div>
-            {{/if}}
+            {{/if}} --}}
 
         </footer>
     </div>
