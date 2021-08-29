@@ -24,6 +24,10 @@ body {
 
 /*------------------------HERO SECTION-------------------*/
 .hero {
+    margin-top: 50px;
+}
+
+.hero-welcome {
     width: 100%;
     height: 84vh;
     overflow: hidden;
@@ -155,20 +159,33 @@ body {
 }
 
 /*------------------------PHOTO GRID / MAIN SECTION-------------------*/
+#row {
+    padding-left: 50px;
+}
 
+.card-image img {
+    height: 200px;
+    width: auto;
+}
+
+.card-image {
+    height: 215px;
+    width: auto;
+    background-color: var(--third);
+}
 
 #parent {
     display: flex;
   }
   #narrow {
-    width: 200px;
-    background: lightblue;
+    width: 300px;
+    /* background: lightblue; */
     /* Just so it's visible */
   }
   #wide {
     flex: 1;
     /* Grow to rest of container */
-    background: lightgreen;
+    /* background: lightgreen; */
     /* Just so it's visible */
   }
 /*------------------------FOOTER------------------------*/
@@ -212,3 +229,9 @@ footer {
     vertical-align: middle;
     width: 100%;
   }
+
+
+#drink-section img{
+    width: 25%;
+    height: auto;
+}

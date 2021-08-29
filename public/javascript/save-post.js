@@ -1,10 +1,15 @@
 async function saveFormHandler(event) {
     event.preventDefault();
 
+    console.log('button clicked');
+
     const id = window.location.toString().split('/')[
         window.location.toString().split('/').length - 1
     ];
-    const response = await fetch(`/api/posts/saved`, {
+    
+    console.log(id);
+
+    const response = await fetch(`/api/posts/save`, {
         method: 'PUT',
         body: JSON.stringify({
             post_id: id
@@ -13,7 +18,7 @@ async function saveFormHandler(event) {
     });
 
     if (response.ok) {
-        document.location.replace('/saved');
+        document.location.reload;
     } else {
         alert(response.statusText);
     }
