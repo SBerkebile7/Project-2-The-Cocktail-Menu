@@ -22,18 +22,8 @@ body {
     background-color: var(--third);
 }
 
-/* .logout {
-    float: right;
-    margin-top: 10px;
-    margin-right: 5px;
 
-}
-
-.logout:hover {
-    color: var(--first);
-} */
-
-/*------------------------HERO SECTION-------------------*/
+/*------------------------LOGIN SECTION-------------------*/
 .hero img {
     width: 100%;
     margin-top: 60px;
@@ -41,6 +31,10 @@ body {
 
 #logo {
   margin-top: 50px;
+}
+
+#search-bar {
+    margin-top: 50px;
 }
 
 .login-form-wrapper {
@@ -76,6 +70,7 @@ body {
     margin: 0 10px 10px 10px;
 }
 
+
 .login-input::placeholder {
     color: white;
 }
@@ -86,6 +81,16 @@ body {
     font-weight: bold;
     margin: 10px;
     border-radius: 25px;
+}
+
+.login-button:hover {
+    font-size: 21px;
+    width: 40%;
+    font-weight: bold;
+    margin: 0px 10px 20px 10px;
+    border-radius: 25px;
+    background-color: var(--first);
+
 }
 
 .create {
@@ -147,6 +152,16 @@ body {
     border-radius: 25px;
 }
 
+.signup-button:hover {
+    font-size: 21px;
+    width: 40%;
+    font-weight: bold;
+    margin: 0px 10px 20px 10px;
+    border-radius: 25px;
+    background-color: var(--first);
+
+}
+
 /*------------------------PHOTO GRID / MAIN SECTION-------------------*/
 .centered {
     position: absolute;
@@ -155,10 +170,8 @@ body {
     transform: translate(-50%, -50%);
     text-align: center;
     color:var(--third);
-    
+    font-weight: bold;
 }
-
-
 
 .card img {
     height: 100px;
@@ -166,9 +179,6 @@ body {
     opacity: .6;
 }
 
-/* .card img:hover {
-    opacity: .5;
-} */
 
 .card {
     background-color: white;
@@ -181,15 +191,31 @@ body {
   }
   #narrow {
     width: 300px;
-    /* background: lightblue; */
-    /* Just so it's visible */
   }
+
   #wide {
     flex: 1;
-    /* Grow to rest of container */
-    /* background: lightgreen; */
-    /* Just so it's visible */
   }
+/*------------------------DRINK SEACRCH ------------------------*/
+
+.search-button {
+    font-size: 20px;
+    width: 40%;
+    font-weight: bold;
+    margin: 0px 10px 20px 10px;
+    border-radius: 25px;
+
+}
+.search-button:hover {
+    font-size: 21px;
+    width: 40%;
+    font-weight: bold;
+    margin: 0px 10px 20px 10px;
+    border-radius: 25px;
+    background-color: var(--first);
+
+}
+
 /*------------------------FOOTER------------------------*/
 
 footer {
