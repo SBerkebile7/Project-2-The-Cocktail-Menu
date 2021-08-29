@@ -25,12 +25,11 @@ body {
 /*------------------------HERO SECTION-------------------*/
 .hero {
     width: 100%;
-    height: 88vh;
+    height: 84vh;
     overflow: hidden;
-}
-
-.hero img {
-    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .login-form-wrapper {
@@ -40,8 +39,6 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     background-color: var(--third);
-    position: relative;
-    bottom: 70%;
 }
 
 .login-head {
@@ -110,8 +107,6 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     background-color: var(--third);
-    position: relative;
-    bottom: 70%;
 }
 
 .signup-head {
