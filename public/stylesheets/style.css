@@ -239,6 +239,10 @@ footer {
     background-color: #FF5E00;
 }
 
+.footer-links {
+    display: inline inline-block;
+}
+
 .logo {
     color: white;
 }
