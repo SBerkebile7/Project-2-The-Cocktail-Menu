@@ -1,4 +1,5 @@
-<div id="parent">
+<div class="row">
+   <div id="parent">
     <div id="narrow">
 
         <img src="cropped_logo-removebg-preview.png" id="logo">
@@ -8,7 +9,7 @@
         <div id="in-wide">
             <div>
 
-                {{!-- SEARCH BAR  --}}
+                {{!-- SEARCH BAR --}}
                 <div class="div-login">
                     <input type="text" id="search-bar" class="form-control login-input" placeholder="SEARCH" />
                 </div>
@@ -56,33 +57,7 @@
                     </div>
                 </div>
 
-                {{!-- <div class="card col s12 m6 13 container box">
-                    <div class="card-image" id="card-3">
-                        <img class="post-6" src="pina colada.jpg">
-                    </div>
-                </div> --}}
-
-
-                <form class="post-search">
-                    <div>
-                        
-                        <label for="search-area">Choose a liquor to search for here:</label>
-                        <select id="search-area" name="search-area">
-                            <option value="Gin">Gin</option>
-                            <option value="Rum">Rum</option>
-                            <option value="Tequila">Tequila</option>
-                            <option value="Vodka">Vodka</option>
-                            <option value="Whiskey">Whiskey</option>
-                        </select>
-                    </div>
-                    <a href="/search"><button type="submit" class="search-button button is-dark">Search</button></a>
-                </form>
-
-                <section id="drink-section">
-
-                </section>
-
-
+                {{!-- NEED TO PUT THIS POST LIST INTO THE TOP SIX TILES --}}
                 <ul class="post-list">
                     {{#each posts as |post|}}
                     <li>
@@ -90,11 +65,121 @@
                     </li>
                     {{/each}}
                 </ul>
+
             </div>
 
         </div>
+     </div>
 
-    </div>
+        </div>
+        <div class="row">
+               <form class="post-search">
+            <div>
+
+                <label for="search-area"><h4 class="search-directions">Choose a liquor to search for here:</h4></label>
+                <select id="search-area" name="search-area">
+                    <option value="Gin">Gin</option>
+                    <option value="Rum">Rum</option>
+                    <option value="Tequila">Tequila</option>
+                    <option value="Vodka">Vodka</option>
+                    <option value="Whiskey">Whiskey</option>
+                </select>
+            
+            <a href="/search"><button type="submit" class="search-button button is-dark">Search</button></a>
+        </form>
+        </div>
+        </div>
+
+
+     
+
+    
+ {{!-- ____________________________DRINK RESULT CARDS_______________________________ --}}
+        
+    <div class="row">
+        <div class="col-8">
+        <section id="container drink-section">
+            <div class="card" style="width: 12rem;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                        of the card's content.</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Cras justo odio</li>
+                    <li class="list-group-item">Dapibus ac facilisis in</li>
+                    <li class="list-group-item">Vestibulum at eros</li>
+                </ul>
+                <div class="card-body">
+                    <a href="#" class="card-link">Card link</a>
+                    <a href="#" class="card-link">Another link</a>
+                </div>
+            </div>
+
+            <div class="card" style="width: 12rem;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                        of the card's content.</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Cras justo odio</li>
+                    <li class="list-group-item">Dapibus ac facilisis in</li>
+                    <li class="list-group-item">Vestibulum at eros</li>
+                </ul>
+                <div class="card-body">
+                    <a href="#" class="card-link">Card link</a>
+                    <a href="#" class="card-link">Another link</a>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                        of the card's content.</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Cras justo odio</li>
+                    <li class="list-group-item">Dapibus ac facilisis in</li>
+                    <li class="list-group-item">Vestibulum at eros</li>
+                </ul>
+                <div class="card-body">
+                    <a href="#" class="card-link">Card link</a>
+                    <a href="#" class="card-link">Another link</a>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                        of the card's content.</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Cras justo odio</li>
+                    <li class="list-group-item">Dapibus ac facilisis in</li>
+                    <li class="list-group-item">Vestibulum at eros</li>
+                </ul>
+                <div class="card-body">
+                    <a href="#" class="card-link">Card link</a>
+                    <a href="#" class="card-link">Another link</a>
+                </div>
+            </div>
+
+        </section>
+        </div>
+        </div>
+
+        </div>
+
+
+
+   
 
 
     <script src="/javascript/search.js"></script>

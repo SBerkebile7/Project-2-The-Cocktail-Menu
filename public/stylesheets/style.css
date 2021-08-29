@@ -203,6 +203,7 @@ body {
   #wide {
     flex: 1;
   }
+
 /*------------------------DRINK SEACRCH ------------------------*/
 
 .search-button {
@@ -222,6 +223,12 @@ body {
     background-color: var(--first);
 
 }
+
+.search-directions {
+    color: white;
+}
+
+
 
 /*------------------------FOOTER------------------------*/
 
