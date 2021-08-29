@@ -23,12 +23,21 @@ body {
 }
 
 /*------------------------HERO SECTION-------------------*/
-.hero img {
-    width: 100%;
+.hero {
     margin-top: 50px;
 }
 
+.hero-welcome {
+    width: 100%;
+    height: 84vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .login-form-wrapper {
+    margin: 0 auto;
     width: 300px;
     display: flex;
     flex-wrap: wrap;
@@ -55,6 +64,7 @@ body {
 
 .login-input {
     background-color: var(--third);
+    color: white;
     border-color: white;
     border-radius: 2px;
     border-width: 3px;
@@ -63,6 +73,13 @@ body {
 
 .login-input::placeholder {
     color: white;
+}
+
+.login-input:focus {
+    background-color: var(--third);
+    color: white;
+    border-color: white;
+    box-shadow: none;
 }
 
 .login-button {
@@ -88,6 +105,7 @@ body {
 }
 
 .signup-form-wrapper {
+    margin: 0 auto;
     width: 300px;
     display: flex;
     flex-wrap: wrap;
@@ -114,6 +132,7 @@ body {
 
 .signup-input {
     background-color: var(--third);
+    color: white;
     border-color: white;
     border-radius: 2px;
     border-width: 3px;
@@ -122,6 +141,13 @@ body {
 
 .signup-input::placeholder {
     color: white;
+}
+
+.signup-input:focus {
+    background-color: var(--third);
+    color: white;
+    border-color: white;
+    box-shadow: none;
 }
 
 .signup-button {
