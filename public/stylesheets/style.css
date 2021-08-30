@@ -178,12 +178,21 @@ body {
     text-align: center;
     color:var(--third);
     font-weight: bold;
+    z-index: 9998
 }
 
 .card img {
+    width: auto;
+    opacity: 1;
+    height: 100px;
+    z-index: 9999
+}
+
+.card img:hover {
     height: 100px;
     width: auto;
     opacity: .6;
+    z-index: 9997;
 }
 
 
