@@ -32,7 +32,9 @@ body {
 #logo {
   margin-top: 50px;
 }
-
+.div-login {
+    background-color: var(--third);
+}
 #search-bar {
     margin-top: 50px;
 }
@@ -70,7 +72,18 @@ body {
     margin: 0 10px 10px 10px;
 }
 
+.search-input {
+    background-color: var(--third);
+    border-color: white;
+    border-radius: 2px;
+    border-width: 3px;
+    margin: 0 10px 10px 10px;
+}
 
+.search-input::placeholder {
+    color:var(--first);
+    margin-top: 10px;
+}
 
 .login-input::placeholder {
     color: white;
@@ -184,14 +197,14 @@ body {
 .card img {
     width: auto;
     opacity: 1;
-    height: 100px;
+    height: 110px;
     z-index: 9999
 }
 
 .card img:hover {
-    height: 100px;
+    height: 110px;
     width: auto;
-    opacity: .6;
+    opacity: .5;
     z-index: 9997;
 }
 
