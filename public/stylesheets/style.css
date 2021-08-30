@@ -22,9 +22,8 @@ body {
     background-color: var(--third);
 }
 
-
 /*------------------------LOGIN SECTION-------------------*/
-.hero img {
+/* .hero img {
     width: 100%;
     margin-top: 60px;
 }
@@ -36,10 +35,23 @@ body {
     background-color: var(--third);
 }
 #search-bar {
+======= */ */
+/*------------------------HERO SECTION-------------------*/
+.hero {
     margin-top: 50px;
 }
 
+.hero-welcome {
+    width: 100%;
+    height: 84vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .login-form-wrapper {
+    margin: 0 auto;
     width: 300px;
     display: flex;
     flex-wrap: wrap;
@@ -66,6 +78,7 @@ body {
 
 .login-input {
     background-color: var(--third);
+    color: white;
     border-color: white;
     border-radius: 2px;
     border-width: 3px;
@@ -93,6 +106,13 @@ body {
 
 #login {
     float: right;
+}
+
+.login-input:focus {
+    background-color: var(--third);
+    color: white;
+    border-color: white;
+    box-shadow: none;
 }
 
 .login-button {
@@ -128,6 +148,7 @@ body {
 }
 
 .signup-form-wrapper {
+    margin: 0 auto;
     width: 300px;
     display: flex;
     flex-wrap: wrap;
@@ -154,6 +175,7 @@ body {
 
 .signup-input {
     background-color: var(--third);
+    color: white;
     border-color: white;
     border-radius: 2px;
     border-width: 3px;
@@ -162,6 +184,13 @@ body {
 
 .signup-input::placeholder {
     color: white;
+}
+
+.signup-input:focus {
+    background-color: var(--third);
+    color: white;
+    border-color: white;
+    box-shadow: none;
 }
 
 .signup-button {
@@ -182,7 +211,7 @@ body {
 
 }
 
-/*------------------------PHOTO GRID / MAIN SECTION-------------------*/
+/*------------------------PHOTO GRID / SECTION-------------------*/
 .centered {
     position: absolute;
     top: 50%;
