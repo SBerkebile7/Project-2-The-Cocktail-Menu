@@ -85,7 +85,7 @@ body {
     margin: 0 10px 10px 10px;
 }
 
-/* .search-input {
+.search-input {
     background-color: var(--third);
     border-color: white;
     border-radius: 2px;
@@ -96,7 +96,7 @@ body {
 .search-input::placeholder {
     color:var(--first);
     margin-top: 10px;
-} */
+}
 
 .login-input::placeholder {
     color: white;
