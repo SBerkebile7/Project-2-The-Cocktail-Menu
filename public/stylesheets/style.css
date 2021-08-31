@@ -48,6 +48,7 @@ body {
     align-items: center;
 }
 
+/*------------------------LOGIN SECTION-------------------*/
 .login-form-wrapper {
     margin: 0 auto;
     width: 300px;
@@ -83,8 +84,6 @@ body {
     margin: 0 10px 10px 10px;
 }
 
-
-
 .login-input::placeholder {
     color: white;
     margin-top: 10px;
@@ -108,16 +107,24 @@ body {
     font-weight: bold;
     margin: 10px;
     border-radius: 25px;
+    border-width: 3px;
+    border-color: white;
 }
 
 .login-button:hover {
-    font-size: 21px;
-    width: 40%;
-    font-weight: bold;
-    margin: 0px 10px 20px 10px;
-    border-radius: 25px;
-    background-color: var(--first);
+    color: white;
+    background-color: var(--third);
+    border-color: white;
+}
 
+.login-button:focus {
+    border-color: white;
+    box-shadow: none;
+}
+
+.login-button:focus:not(:active) {
+    border-color: white;
+    box-shadow: none;
 }
 
 .create {
@@ -126,14 +133,31 @@ body {
     margin-bottom: 15px;
     padding: 0;
     border-radius: 0;
+    border-color: transparent;
     border-bottom: 1px solid var(--first);
+    background-color: transparent;
 }
 
 .create:hover {
     color: white;
-    border-bottom: 2px solid white;
+    border-color: transparent;
+    border-bottom: 1px solid white;
 }
 
+.create:focus {
+    border-color: transparent;
+    border-bottom: 1px solid white;
+    box-shadow: none;
+}
+
+.create:focus:not(:active) {
+    border-color: transparent;
+    border-bottom: 1px solid white;
+    box-shadow: none;
+}
+
+
+/*------------------------SIGNUP SECTION-------------------*/
 .signup-form-wrapper {
     margin: 0 auto;
     width: 300px;
@@ -186,16 +210,24 @@ body {
     font-weight: bold;
     margin: 10px 10px 20px 10px;
     border-radius: 25px;
+    border-width: 3px;
+    border-color: white;
 }
 
 .signup-button:hover {
-    font-size: 21px;
-    width: 40%;
-    font-weight: bold;
-    margin: 0px 10px 20px 10px;
-    border-radius: 25px;
-    background-color: var(--first);
+    color: white;
+    background-color: var(--third);
+    border-color: white;
+}
 
+.signup-button:focus {
+    border-color: white;
+    box-shadow: none;
+}
+
+.signup-button:focus:not(:active) {
+    border-color: white;
+    box-shadow: none;
 }
 
 /*------------------------PHOTO GRID / SECTION-------------------*/
