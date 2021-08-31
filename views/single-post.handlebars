@@ -1,13 +1,20 @@
 {{> post-info post}}
 
 {{#if loggedIn}}
-<form class="save-post">
+<form class="comment-form">
     <div>
-        <button type="button" class="save-post-btn">save post</button>
+        <textarea name="comment-body"></textarea>
+    </div>
+
+    <div>
+        <button type="submit">add comment</button>
     </div>
 </form>
 {{/if}}
 
+{{> comments post.comments}}
+
 {{#if loggedIn}}
-<script src="/javascript/save-post.js"></script>
+<script src="/javascript/comment.js"></script>
+
 {{/if}}

@@ -1,9 +1,8 @@
 const router = require('express').Router();
 const sequelize = require('../config/connection');
 const { Post, User, Comment } = require('../models');
-// const search = require('../public/javascript/search');
 
-// get all posts for homepage
+// get all posts for blog
 router.get('/', (req, res) => {
     console.log('======================');
     Post.findAll({
@@ -31,7 +30,7 @@ router.get('/', (req, res) => {
     .then(dbPostData => {
         const posts = dbPostData.map(post => post.get({ plain: true }));
 
-        res.render('homepage', {
+        res.render('blog', {
             posts,
             loggedIn: req.session.loggedIn
         });
@@ -86,73 +85,6 @@ router.get('/post/:id', (req, res) => {
         console.log(err);
         res.status(500).json(err);
     });
-});
-
-// allows users to login
-router.get('/login', (req, res) => {
-    if (req.session.loggedIn) {
-        res.redirect('/');
-        return;
-    }
-
-    res.render('login');
-});
-
-// allows users to signup using a username
-router.get('/signup', (req, res) => {
-    if (req.session.loggedIn) {
-        res.redirect('/');
-        return;
-    }
-
-    res.render('signup');
-});
-
-// allows users to see saved posts
-router.get('/saved', (req, res) => {
-    if (req.session.loggedIn) {
-        res.render('saved', {
-            loggedIn: req.session.loggedIn
-        });
-        return;
-    }
-
-    res.redirect('/');
-});
-
-// allows users to see our Contact Us page
-router.get('/contact', (req, res) => {
-    if (req.session.loggedIn) {
-        res.render('contact', {
-            loggedIn: req.session.loggedIn
-        });
-        return;
-    }
-    
-    res.render('contact');
-});
-
-router.get('/search', (req, res) => {
-    if (req.session.loggedIn) {
-        res.render('search', {
-            loggedIn: req.session.loggedIn
-        });
-        return;
-    }
-    
-    res.render('search');
-});
-
-// allows users to see our About Us page
-router.get('/about', (req, res) => {
-    if (req.session.loggedIn) {
-        res.render('about', {
-            loggedIn: req.session.loggedIn
-        });
-        return;
-    }
-    
-    res.render('about');
 });
 
 module.exports = router;
