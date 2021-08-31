@@ -339,7 +339,12 @@ footer {
   }
 
 
-#drink-section img{
+/* #drink-section img{
     width: 25%;
     height: auto;
+} */
+
+.scroll {
+    max-height: 25rem;
+    overflow-y: auto;
 }
