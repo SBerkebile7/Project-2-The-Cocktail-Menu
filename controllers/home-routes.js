@@ -127,6 +127,30 @@ router.get('/search', (req, res) => {
     res.render('search');
 });
 
+// allows users to see our About Us page
+router.get('/about', (req, res) => {
+    if (req.session.loggedIn) {
+        res.render('about', {
+            loggedIn: req.session.loggedIn
+        });
+        return;
+    }
+    
+    res.render('about');
+});
+
+// allows users to see our Blog page
+router.get('/blog', (req, res) => {
+    if (req.session.loggedIn) {
+        res.render('blog', {
+            loggedIn: req.session.loggedIn
+        });
+        return;
+    }
+    
+    res.render('blog');
+});
+
 // router.get('/search', search, (req, res) => {
 //     var searchResult = req.searchResult;
 
