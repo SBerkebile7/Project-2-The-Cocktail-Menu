@@ -39,6 +39,7 @@
                             <div class="col-sm">
                                 <div class="card">
                                     <img src="margarita.jpg">
+
                                     <div class="centered">SIDECAR</div>
                                 </div>
                             </div>
@@ -77,34 +78,24 @@
     <div class="row">
         <form class="post-search">
 
-            <label for="search-area">
-                <h4 class="search-directions">Choose a liquor to search for here:</h4>
-            </label>
+             <label for="search-area">
+                    <h4 class="search-directions">Choose a liquor to search for here:</h4>
+                </label>
 
-           
-                <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Select All
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                         <select id="search-area" name="search-area"></select>
-                        <option value="Gin" class="dropdown-item">Gin</option>
-                        <option value="Rum" class="dropdown-item">Rum</option>
-                        <option value="Tequila" class="dropdown-item">Tequila</option>
-                        <option value="Vodka" class="dropdown-item">Vodka</option>
-                        <option value="Whiskey" class="dropdown-item">Whiskey</option>
-                    </div>
-                </div>
-            </select>
 
-            <a href="/search"><button type="submit" class="search-button button is-dark">Search</button></a>
+                
+                <select id="search-area" name="search-area">
+                    <option value="Gin">Gin</option>
+                    <option value="Rum">Rum</option>
+                    <option value="Tequila">Tequila</option>
+                    <option value="Vodka">Vodka</option>
+                    <option value="Whiskey">Whiskey</option>
+                </select>
+              
+                <a href="/search"><button type="submit" class="search-button button is-dark">Search</button></a>
         </form>
     </div>
 </div>
-
-
-
 
 
 {{!-- ____________________________DRINK RESULT CARDS_______________________________ --}}
