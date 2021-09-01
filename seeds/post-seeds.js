@@ -3,7 +3,6 @@ const { Post } = require('../models');
 const postdata = [
     {
         title: 'Margarita',
-        main_liquor: 'tequila',
         post_content: `The margarita is the most popular cocktail in America. It’s also the most popular cocktail in every major U.S. market except Chicago, where margaritas are strangely not even in the top 5. What’s even more remarkable is that margaritas cost almost 50 cents more than the national average cocktail price of $9 and they’re still the most popular cocktail. Bartenders can’t afford not to know how to make margaritas at the drop of a hat. Especially during afternoons and early evenings, when margaritas are most popular. They're also the perfect chance to try and upsell a customer.
         
         Margarita Ingredients
@@ -24,7 +23,6 @@ const postdata = [
     },
     {
         title: 'Martini',
-        main_liquor: 'gin',
         post_content: `Martinis are probably the easiest cocktail to make in the whole wide world. They definitely deserve a spot in our easy, basic cocktails section. If not for one thing: they’re ridiculously popular. They are the 2nd most popular drink in the U.S. behind the margarita. They’re also most frequently enjoyed at night. That says a lot about the martini. Gin is included in some aphrodisiac drinks, after all. Since its invention in 1863, it’s held a sort of effortless mystique perfectly at home when darkness falls. Learn to make a perfect one.
 
         Martini Ingredients
