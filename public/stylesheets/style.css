@@ -31,11 +31,9 @@ body {
 #logo {
   margin-top: 50px;
 }
-.div-login {
-    background-color: var(--third);
-}
+
 #search-bar {
-======= */ 
+======= */ */
 /*------------------------HERO SECTION-------------------*/
 .hero {
     margin-top: 50px;
@@ -43,13 +41,14 @@ body {
 
 .hero-welcome {
     width: 100%;
-    height: 84vh;
+    height: 85vh;
     overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+/*------------------------LOGIN SECTION-------------------*/
 .login-form-wrapper {
     margin: 0 auto;
     width: 300px;
@@ -85,19 +84,6 @@ body {
     margin: 0 10px 10px 10px;
 }
 
-.search-input {
-    background-color: var(--third);
-    border-color: white;
-    border-radius: 2px;
-    border-width: 3px;
-    margin: 0 10px 10px 10px;
-}
-
-.search-input::placeholder {
-    color:var(--first);
-    margin-top: 10px;
-}
-
 .login-input::placeholder {
     color: white;
     margin-top: 10px;
@@ -121,16 +107,24 @@ body {
     font-weight: bold;
     margin: 10px;
     border-radius: 25px;
+    border-width: 3px;
+    border-color: white;
 }
 
 .login-button:hover {
-    font-size: 21px;
-    width: 40%;
-    font-weight: bold;
-    margin: 0px 10px 20px 10px;
-    border-radius: 25px;
-    background-color: var(--first);
+    color: white;
+    background-color: var(--third);
+    border-color: white;
+}
 
+.login-button:focus {
+    border-color: white;
+    box-shadow: none;
+}
+
+.login-button:focus:not(:active) {
+    border-color: white;
+    box-shadow: none;
 }
 
 .create {
@@ -139,14 +133,31 @@ body {
     margin-bottom: 15px;
     padding: 0;
     border-radius: 0;
+    border-color: transparent;
     border-bottom: 1px solid var(--first);
+    background-color: transparent;
 }
 
 .create:hover {
     color: white;
-    border-bottom: 2px solid white;
+    border-color: transparent;
+    border-bottom: 1px solid white;
 }
 
+.create:focus {
+    border-color: transparent;
+    border-bottom: 1px solid white;
+    box-shadow: none;
+}
+
+.create:focus:not(:active) {
+    border-color: transparent;
+    border-bottom: 1px solid white;
+    box-shadow: none;
+}
+
+
+/*------------------------SIGNUP SECTION-------------------*/
 .signup-form-wrapper {
     margin: 0 auto;
     width: 300px;
@@ -199,16 +210,24 @@ body {
     font-weight: bold;
     margin: 10px 10px 20px 10px;
     border-radius: 25px;
+    border-width: 3px;
+    border-color: white;
 }
 
 .signup-button:hover {
-    font-size: 21px;
-    width: 40%;
-    font-weight: bold;
-    margin: 0px 10px 20px 10px;
-    border-radius: 25px;
-    background-color: var(--first);
+    color: white;
+    background-color: var(--third);
+    border-color: white;
+}
 
+.signup-button:focus {
+    border-color: white;
+    box-shadow: none;
+}
+
+.signup-button:focus:not(:active) {
+    border-color: white;
+    box-shadow: none;
 }
 
 /*------------------------PHOTO GRID / SECTION-------------------*/
@@ -220,21 +239,12 @@ body {
     text-align: center;
     color:var(--third);
     font-weight: bold;
-    z-index: 9998
 }
 
 .card img {
+    height: 100px;
     width: auto;
-    opacity: 1;
-    height: 110px;
-    z-index: 9999
-}
-
-.card img:hover {
-    height: 110px;
-    width: auto;
-    opacity: .5;
-    z-index: 9997;
+    opacity: .6;
 }
 
 
@@ -281,31 +291,7 @@ body {
     margin-left: 100px;
     font-size: 20px;
 }
-/*------------------------BLOG------------------------*/
-.bartender {
-    width: 100%;
-    margin: 0;
-    
-}
-.bartender img {
-    width: auto;
-    opacity: 1;
-    height: 110px;
-}
 
-.bartender-card {
-    width: auto;
-    opacity: 1;
-    height: 110px;
-}
-
-
-.hero-blog {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
 
 
 /*------------------------FOOTER------------------------*/
@@ -353,12 +339,7 @@ footer {
   }
 
 
-#drink-section img {
+#drink-section img{
     width: 25%;
     height: auto;
-}
-
-.scroll {
-    max-height: 25rem;
-    overflow-y: auto;
 }
