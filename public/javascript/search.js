@@ -28,6 +28,36 @@ async function searchFormHandler(event) {
     });
 }
 
+async function searchWordFormHandler(event) {
+    event.preventDefault();
+
+    $("#drink-section").stop();
+    $("#drink-section").empty();
+
+    const search = document.querySelector('#search-directions').value;
+
+    console.log("You chose: " + search);
+    fetch(`https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${search}`)
+    .then(
+        function(response) {
+            if (response.status !== 200) {
+                console.log('Looks like there was a problem. Status Code: ' +
+                response.status);
+                return;
+            }
+
+            // Examine the text in the response
+            response.json().then(function(data) {
+                console.log(data);
+                displayCocktail(data);
+            });
+        }
+    )
+    .catch(function(err) {
+        console.log('Fetch Error :-S', err);
+    });
+}
+
 async function displayCocktail(cocktail) {
     let drinkSection = document.querySelector('#drink-section');
     let numDrinks = cocktail.drinks.length;
@@ -91,3 +121,5 @@ async function displayCocktail(cocktail) {
 };
 
 document.querySelector('.post-search').addEventListener('submit', searchFormHandler);
+
+document.querySelector('.word-post-search').addEventListener('submit', searchWordFormHandler);
