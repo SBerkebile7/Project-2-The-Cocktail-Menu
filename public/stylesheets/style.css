@@ -50,6 +50,15 @@ body {
     align-items: center;
 }
 
+.blog-hero {
+    width: 100%;
+    height: 84vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .login-form-wrapper {
     margin: 0 auto;
     width: 300px;
@@ -226,12 +235,12 @@ body {
 .card img {
     width: auto;
     opacity: 1;
-    height: 110px;
+    height: 300px;
     z-index: 9999
 }
 
 .card img:hover {
-    height: 110px;
+    height: 300px;
     width: auto;
     opacity: .5;
     z-index: 9997;
