@@ -30,27 +30,34 @@ async function searchFormHandler(event) {
 
 async function displayCocktail(cocktail) {
     let drinkSection = document.querySelector('#drink-section');
+    let numDrinks = cocktail.drinks.length;
 
-    for(i=0; i < cocktail.drinks.length; i++) {
+    if (cocktail.drinks.length > 12) {
+        numDrinks = 12;
+    }
+
+    for(i=0; i < numDrinks; i++) {
 
         let thisDrinkID = cocktail.drinks[i].idDrink;
         
         drinkSection.innerHTML += `
-            <div class="col-4 scroll">
-
-                <div class="card" style="width: 18rem;">
-                    <img src="${cocktail.drinks[i].strDrinkThumb}" class="card-img-top" alt="...">
+            <div class="col-4">
+                <div class="card scroll" style="width: 18rem;">
+                    <div class="card-body drink-img-${i}">
+                        <style>
+                        .drink-img-${i} {
+                            height: 18rem;
+                            background-image: url(${cocktail.drinks[i].strDrinkThumb});
+                            background-size: cover;
+                            background-position: center;
+                        }
+                        </style>
+                    </div>
                     <div class="card-body">
                         <h5 class="card-title">${cocktail.drinks[i].strDrink}</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                            of the card's content.</p>
                     </div>
                     <ul id="ingredient-section-${i}" class="list-group list-group-flush">
                     </ul>
-                    <div class="card-body">
-                        <a href="#" class="card-link">Card link</a>
-                        <a href="#" class="card-link">Another link</a>
-                    </div>
                 </div>
             </div>
         `;

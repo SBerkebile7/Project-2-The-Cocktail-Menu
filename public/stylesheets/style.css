@@ -239,12 +239,21 @@ body {
     text-align: center;
     color:var(--third);
     font-weight: bold;
+    z-index: 9998
 }
 
 .card img {
-    height: 100px;
     width: auto;
-    opacity: .6;
+    opacity: 1;
+    height: 110px;
+    z-index: 9999
+}
+
+.card img:hover {
+    height: 110px;
+    width: auto;
+    opacity: .5;
+    z-index: 9997;
 }
 
 
@@ -256,14 +265,15 @@ body {
 
 #parent {
     display: flex;
-  }
-  #narrow {
-    width: 300px;
-  }
+}
 
-  #wide {
+#narrow {
+    width: 300px;
+}
+
+#wide {
     flex: 1;
-  }
+}
 
 /*------------------------DRINK SEACRCH ------------------------*/
 
@@ -292,7 +302,30 @@ body {
     font-size: 20px;
 }
 
+/*------------------------BLOG------------------------*/
+.bartender {
+    width: 100%;
+    margin: 0;
 
+}
+.bartender img {
+    width: auto;
+    opacity: 1;
+    height: 110px;
+}
+
+.bartender-card {
+    width: auto;
+    opacity: 1;
+    height: 110px;
+}
+
+.hero-blog {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 
 /*------------------------FOOTER------------------------*/
 
@@ -324,22 +357,38 @@ footer {
     display: flex;
     flex-wrap: wrap;
     padding: 0 3px;
-  }
+}
 
 .col {
     flex: 33%;
     max-width: 33%;
     padding: 0 3px;
-  }
+}
   
-  .col img {
+.col img {
     margin-top: 8px;
     vertical-align: middle;
     width: 100%;
-  }
+}
 
+#drink-section {
+    justify-content: center;
+    padding: 2rem;
+}
 
-#drink-section img{
+#drink-section img {
     width: 25%;
     height: auto;
 }
+
+#drink-section .col-4 {
+    max-height: 25rem;
+    margin-bottom: 2rem;
+}
+
+.scroll {
+    max-height: 100%;
+    overflow-y: auto;
+    display: block;
+    margin: auto;
+} 
