@@ -28,6 +28,36 @@ async function searchFormHandler(event) {
     });
 }
 
+async function searchWordFormHandler(event) {
+    event.preventDefault();
+
+    $("#drink-section").stop();
+    $("#drink-section").empty();
+
+    const search = document.querySelector('#search-directions').value;
+
+    console.log("You chose: " + search);
+    fetch(`https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${search}`)
+    .then(
+        function(response) {
+            if (response.status !== 200) {
+                console.log('Looks like there was a problem. Status Code: ' +
+                response.status);
+                return;
+            }
+
+            // Examine the text in the response
+            response.json().then(function(data) {
+                console.log(data);
+                displayCocktail(data);
+            });
+        }
+    )
+    .catch(function(err) {
+        console.log('Fetch Error :-S', err);
+    });
+}
+
 async function displayCocktail(cocktail) {
     let drinkSection = document.querySelector('#drink-section');
 
@@ -36,21 +66,16 @@ async function displayCocktail(cocktail) {
         let thisDrinkID = cocktail.drinks[i].idDrink;
         
         drinkSection.innerHTML += `
-            <div class="col-4 scroll">
+            <div class="col-4 scroll mt-1" >
 
                 <div class="card" style="width: 18rem;">
                     <img src="${cocktail.drinks[i].strDrinkThumb}" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">${cocktail.drinks[i].strDrink}</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                            of the card's content.</p>
+    
                     </div>
                     <ul id="ingredient-section-${i}" class="list-group list-group-flush">
                     </ul>
-                    <div class="card-body">
-                        <a href="#" class="card-link">Card link</a>
-                        <a href="#" class="card-link">Another link</a>
-                    </div>
                 </div>
             </div>
         `;
@@ -84,3 +109,5 @@ async function displayCocktail(cocktail) {
 };
 
 document.querySelector('.post-search').addEventListener('submit', searchFormHandler);
+
+document.querySelector('.word-post-search').addEventListener('submit', searchWordFormHandler);
