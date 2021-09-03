@@ -9,20 +9,20 @@
                 <h1 class="has-text-primary-light is-size-1 has-text-centered mobile has-text-weight-bold mt-5">
                     bartender blog</h1>
             </div>
+            <ol class="post-list">
+            {{#each posts as |post|}}
+            <li>
+                {{> post-info post }}
+            </li>
+            {{/each}}
+            </ol>
             <div class="col-3">
                 <img class="logo-blog" style="width: 18em;" src="./images/logo-drink-removebg-preview.png">
             </div>
         </div>
     </div>
 
-    <ol class="post-list">
-        {{#each posts as |post|}}
-        <li>
-            {{> post-info post }}
-        </li>
-        {{/each}}
-        <p>At least they should be here</p>
-    </ol>
+    
 
     <div class="card-sequence">
 
