@@ -2,7 +2,9 @@
     <div class="container-md" id="photo-grid">
         <a href="/post/{{id}}" target="_blank">{{title}}</a>
     </div>
-    {{!-- <div class="meta">
+    <div class="meta">
         {{post_content}} by {{user.username}} on {{format_date created_at}}
-    </div> --}}
+        |
+        <a href="/post/{{id}}">{{comments.length}} {{format_plural "comment" comments.length}}</a>
+    </div>
 </article>

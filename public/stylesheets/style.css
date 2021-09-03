@@ -316,6 +316,17 @@ footer {
 
 .footer-links {
     display: inline inline-block;
+    align-content: flex-end;
+}
+
+footer li::after {
+    content: "|";
+    float: right;
+    color: black;
+}
+
+footer li::last-child::after {
+    display: none;
 }
 
 .logo {
@@ -358,6 +369,7 @@ footer {
     height: auto;
 }
 
+<<<<<<< HEAD
 /*----------CONTACT PAGE ------------*/
 /* .contact-page img {
     z-index: 0;
@@ -398,3 +410,9 @@ footer {
     padding: 16px;
     background-color: white;
   }
+=======
+.scroll {
+    max-height: 25rem;
+    overflow-y: auto;
+}
+>>>>>>> main
