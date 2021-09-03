@@ -15,6 +15,10 @@ body {
     background-color:var(--third);
 }
 
+body::-webkit-scrollbar {
+    display: none;
+}
+
 /*------------------------HEADER AND NAV------------------------*/
 .title-logo {
     color: var(--first);
