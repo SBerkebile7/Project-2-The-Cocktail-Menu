@@ -391,4 +391,13 @@ footer {
     overflow-y: auto;
     display: block;
     margin: auto;
-} 
+}
+
+.search-input {
+    background-color: var(--third);
+    border-color: white;
+    border-radius: 2px;
+    border-width: 3px;
+    margin: 0 10px 10px -5px;
+    width: 80%;
+}
