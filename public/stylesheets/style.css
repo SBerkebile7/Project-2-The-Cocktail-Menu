@@ -13,6 +13,11 @@ body {
     background-size: cover;
     background-position: center;
     background-color:var(--third);
+    scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+    display: none;
 }
 
 /*------------------------HEADER AND NAV------------------------*/
@@ -335,6 +340,17 @@ footer {
 
 .footer-links {
     display: inline inline-block;
+    align-content: flex-end;
+}
+
+footer li::after {
+    content: "|";
+    float: right;
+    color: black;
+}
+
+footer li::last-child::after {
+    display: none;
 }
 
 .logo {
@@ -381,6 +397,8 @@ footer {
     height: auto;
 }
 
+<<<<<<< HEAD
+=======
 #drink-section .col-4 {
     max-height: 25rem;
     margin-bottom: 2rem;
@@ -401,3 +419,4 @@ footer {
     margin: 0 10px 10px -5px;
     width: 80%;
 }
+>>>>>>> main
