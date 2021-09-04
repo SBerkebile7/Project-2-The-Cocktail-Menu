@@ -397,8 +397,6 @@ footer li::last-child::after {
     height: auto;
 }
 
-<<<<<<< HEAD
-=======
 #drink-section .col-4 {
     max-height: 25rem;
     margin-bottom: 2rem;
@@ -419,4 +417,3 @@ footer li::last-child::after {
     margin: 0 10px 10px -5px;
     width: 80%;
 }
->>>>>>> main
