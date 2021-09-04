@@ -16,9 +16,29 @@ body {
     scroll-behavior: smooth;
 }
 
-body::-webkit-scrollbar {
-    display: none;
-}
+
+/*----------------------SCROLL STYLES----------------------*/
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: darkgray;
+    border-radius: 10px; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: teal; 
+  }
 
 /*------------------------HEADER AND NAV------------------------*/
 .title-logo {
